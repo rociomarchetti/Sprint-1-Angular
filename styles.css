@@ -1,0 +1,100 @@
+main {
+    background-color: aqua;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    grid-template-areas:
+        "header"
+        "section"
+        "footer";
+}
+
+header {
+    background-color: greenyellow;
+    padding: 10px;
+    display: grid;
+    margin-bottom: 20px;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "Nav-var"
+        "Header-image";
+}
+
+.Nav-var {
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1 fr);
+
+}
+
+.Header-image {
+    background-color: orange;
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 3;
+    grid-row-end: -1;
+}
+
+section {
+    background-color: blueviolet;
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "Content-section"
+        "Right-menu";
+}
+
+.Content-section {
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: -1;
+
+}
+
+.Right-menu {
+    background-color: palevioletred;
+    margin-left: 10px;
+    grid-column-start: 5;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
+
+footer {
+    background-color: burlywood;
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    grid-template-areas:
+        "Bottom-section";
+}
+
+.Bottom-section {
+    background-color: green;
+    grid-column: 1;
+    grid-row: 1;
+}
