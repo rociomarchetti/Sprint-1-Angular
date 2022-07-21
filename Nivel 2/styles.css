@@ -12,16 +12,9 @@ header {
     background-position: center;
     padding: 10px;
     text-align: center;
-    /* grid-column: 1 / -1;
-    grid-row: 1 / span 6; */
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    /*  grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas:
-        "Nav-var"
-        "Header-image"; */
 }
 
 .Nav-var {
@@ -29,8 +22,6 @@ header {
     padding: 20px;
     margin-left: 10%;
     margin-right: 10%;
-    /* grid-column: 1 / -1;
-    grid-row: 1 / 4; */
     display: inline-flex;
     flex-direction: row;
     align-content: center;
@@ -64,22 +55,15 @@ header {
 
 header h1 {
     color: #c36d4d;
-    margin-top: 15%;
+    margin-top: 20%;
+    margin-bottom: 10%;
     font-size: xx-large;
     font-weight: lighter;
-}
-
-#Header-image {
-    background-color: #bfafad;
-    /* grid-column: 2 / 6;
-    grid-row: 3 / -1; */
+    opacity: 0.8;
 }
 
 section {
     background-color: white;
-    /* padding: 10px; */
-    /* grid-column: 1 / -1;
-    grid-row: 7 / 15; */
     margin-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -116,17 +100,6 @@ section {
     display: flex;
     flex-direction: column;
 }
-
-/* #Article-1-header {
-    display: flex;
-    flex-wrap: wrap;
-} 
-
-#Article-date {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-self: flex-start;
-} */
 
 .Article-1 img {
     background-image: url("/Nivel 2/images/sakura.jpg");
@@ -241,9 +214,6 @@ footer {
 
 @media all and (max-width: 768px) {
     section {
-        /* background-color: crimson; */
-        /* grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(14, 1fr); */
         display: flex;
         flex-direction: column;
     }
@@ -252,18 +222,14 @@ footer {
         background-color: crimson;
         padding: 10px;
         column-gap: 10px;
-       /*  grid-column: 1 / -1;
-        grid-row: 1 / 9; */
     }
 
     .Right-menu {
         margin-top: 10px;
         margin-left: 0%;
-        /* grid-column: 1 / -1;
-        grid-row: 9 / -1; */
         grid-template-rows: repeat(8, 1fr);
     }
-    
+
 }
 
 @media all and (max-width: 600px) {
@@ -291,7 +257,7 @@ footer {
 
     #Logo {
         width: 2em;
-        height: 2em; 
+        height: 2em;
     }
 
     section {
