@@ -1,0 +1,341 @@
+main {
+    background-color: white;
+    margin: 10px;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url("/Nivel 2/images/header.jpg");
+    background-position: center;
+    padding: 10px;
+    text-align: center;
+    /* grid-column: 1 / -1;
+    grid-row: 1 / span 6; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    /*  grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "Nav-var"
+        "Header-image"; */
+}
+
+header img {
+    animation-name: desplazamientoLado;
+    animation-duration: 5s;
+}
+
+.Nav-var {
+    color: gray;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* grid-column: 1 / -1;
+    grid-row: 1 / 4; */
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#Logo {
+    width: 4em;
+    height: 4em;
+    position: relative;
+}
+
+.Nav-var div {
+    display: flex;
+    flex-direction: row;
+}
+
+.Nav-var div:hover {
+    font-weight: 800;
+    color: #f08080;
+}
+
+.Nav-var i {
+    margin-right: 5px;
+}
+
+#RRSS {
+    margin-left: 5%;
+}
+
+header h1 {
+    color: #c36d4d;
+    margin-top: 15%;
+    font-size: xx-large;
+    font-weight: lighter;
+    animation-name: opacidad;
+    animation-delay: 0 3s;
+    animation-duration: 5s;
+    
+}
+
+#Header-image {
+    background-color: #bfafad;
+    /* grid-column: 2 / 6;
+    grid-row: 3 / -1; */
+}
+
+section {
+    background-color: white;
+    /* padding: 10px; */
+    /* grid-column: 1 / -1;
+    grid-row: 7 / 15; */
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "Content-section"
+        "Right-menu";
+}
+
+.Content-section {
+    background-color: #d9d9d9;
+    padding: 10px;
+    margin-right: 5px;
+    grid-column: 1 / 9;
+    grid-row: 1 / -1;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "Article-1"
+        "Article-2"
+        "Article-3"
+        "Article-4"
+        "Bottom-information";
+}
+
+.Article-1 {
+    background-color: aliceblue;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+/* #Article-1-header {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+#Article-date {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-self: flex-start;
+} */
+
+.Article-1 img {
+    background-image: url("/Nivel 2/images/sakura.jpg");
+    width: 100%;
+}
+
+#Article-subject {
+    background-color: #f08080;
+    background-position: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    font-size: x-large;
+    color: white;
+}
+
+#Article-text {
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 0%;
+    margin-left: 3%;
+}
+
+#Article-column-1 {
+    margin-right: 5%;
+}
+
+#Article-footer {
+    color: gray;
+    position: relative;
+    bottom: 50%;
+    left: 5%;
+}
+
+.Article-2 {
+    background-color: aliceblue;
+    grid-column: 2;
+    grid-row: 1 / 4;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+.Article-2 img {
+    background-image: url("/Nivel 2/images/comida.jpg");
+    width: 100%;
+}
+
+.Article-3 {
+    background-color: aliceblue;
+    grid-column: 1;
+    grid-row: 4 / 7;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+.Article-3 img {
+    background-image: url("/Nivel 2/images/fuji.jpg");
+    width: 100%;
+}
+
+.Article-4 {
+    background-color: aliceblue;
+    grid-column: 2;
+    grid-row: 4 / 7;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+.Article-4 img {
+    background-image: url("/Nivel 2/images/noche.jpg");
+    width: 98%;
+}
+
+#Bottom-information {
+    background-color: #d9d9d9;
+    text-align: center;
+    grid-column: 1 / span 2;
+    grid-row: 8;
+}
+
+.Right-menu {
+    background-color: #d9d9d9;
+    padding: 10px;
+    margin-left: 10px;
+    grid-column: 9 / -1;
+    grid-row: 1 / -1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Title-menu {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: aliceblue;
+    grid-area: "footer";
+    grid-column: 1 / -1;
+    grid-row: -1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes desplazamientoLado {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes opacidad {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    section {
+        /* background-color: crimson; */
+        /* grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(14, 1fr); */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Content-section {
+        background-color: crimson;
+        padding: 10px;
+        column-gap: 10px;
+        /*  grid-column: 1 / -1;
+        grid-row: 1 / 9; */
+    }
+
+    .Right-menu {
+        margin-top: 10px;
+        margin-left: 0%;
+        /* grid-column: 1 / -1;
+        grid-row: 9 / -1; */
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Nav-var {
+        padding: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .Nav-var div {
+        padding: 10px;
+    }
+
+    #Logo {
+        width: 2em;
+        height: 2em;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Content-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Right-menu {
+        height: 120px;
+    }
+
+}
