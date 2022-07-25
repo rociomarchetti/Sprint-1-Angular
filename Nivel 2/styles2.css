@@ -1,0 +1,279 @@
+main {
+    background-color: white;
+    margin: 10px;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url("../Nivel 2/images/header.jpg");
+    background-position: center;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.Nav-var {
+    color: gray;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#Logo {
+    width: 4em;
+    height: 4em;
+    position: relative;
+}
+
+.Nav-var div {
+    display: flex;
+    flex-direction: row;
+}
+
+.Nav-var div:hover {
+    font-weight: 800;
+    color: #f08080;
+}
+
+.Nav-var i {
+    margin-right: 5px;
+}
+
+#RRSS {
+    margin-left: 5%;
+}
+
+header h1 {
+    color: #c36d4d;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    font-size: xx-large;
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Content-section {
+    background-color: #d9d9d9;
+    padding: 10px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.First-row {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.Second-row {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.Article-1 {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.Article-1 img {
+    background-image: url("../Nivel 2/images/sakura.jpg");
+    width: 100%;
+}
+
+#Article-subject {
+    background-color: #f08080;
+    background-position: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    font-size: x-large;
+    color: white;
+}
+
+#Article-text {
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 0%;
+    margin-left: 3%;
+}
+
+#Article-column-1 {
+    margin-right: 5%;
+}
+
+#Article-footer {
+    color: gray;
+    position: relative;
+    bottom: 50%;
+    left: 5%;
+}
+
+.Article-2 {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.Article-2 img {
+    background-image: url("../Nivel 2/images/comida.jpg");
+    width: 100%;
+}
+
+.Article-3 {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.Article-3 img {
+    background-image: url("../Nivel 2/images/fuji.jpg");
+    width: 100%;
+}
+
+.Article-4 {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.Article-4 img {
+    background-image: url("../Nivel 2/images/noche.jpg");
+    width: 100%;
+}
+
+#Bottom-information {
+    background-color: #d9d9d9;
+    text-align: center;
+    margin: 10px;
+} 
+
+.Right-menu {
+    background-color: #d9d9d9;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Title-menu {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: aliceblue;
+    grid-area: "footer";
+    grid-column: 1 / -1;
+    grid-row: -1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (max-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Content-section {
+        margin: 0px;
+    }
+
+    .Right-menu {
+        margin-top: 10px;
+        margin-left: 0%;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Nav-var {
+        padding: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .Nav-var div {
+        padding: 10px;
+    }
+
+    #Logo {
+        width: 2em;
+        height: 2em;
+    }
+
+    #RRSS {
+        margin-bottom: 20px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .Content-section {
+        flex-direction: column;
+    }
+
+    .First-row {
+        flex-direction: column;
+    }
+
+    .Second-row {
+        flex-direction: column;
+    }
+
+    .Article-1, .Article-2, .Article-3, .Article-4 {
+        width: 100%;
+    }
+
+    .Right-menu {
+        height: 120px;
+    }
+
+}
