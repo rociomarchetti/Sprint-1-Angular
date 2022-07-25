@@ -8,18 +8,13 @@ main {
 }
 
 header {
-    background-image: url("/Nivel 2/images/header.jpg");
+    background-image: url("../Nivel 2/images/header.jpg");
     background-position: center;
     padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-}
-
-header img {
-    animation-name: desplazamientoLado;
-    animation-duration: 5s;
 }
 
 .Nav-var {
@@ -64,53 +59,46 @@ header h1 {
     margin-bottom: 10%;
     font-size: xx-large;
     font-weight: lighter;
-    animation-name: opacidad;
-    animation-delay: 0 3s;
-    animation-duration: 5s;
-    
+    opacity: 0.8;
 }
 
 section {
     background-color: white;
     margin-bottom: 10px;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas:
-        "Content-section"
-        "Right-menu";
+    display: flex;
+    flex-direction: row;
 }
 
 .Content-section {
     background-color: #d9d9d9;
     padding: 10px;
     margin-right: 5px;
-    grid-column: 1 / 9;
-    grid-row: 1 / -1;
-    display: grid;
-    column-gap: 10px;
-    row-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:
-        "Article-1"
-        "Article-2"
-        "Article-3"
-        "Article-4"
-        "Bottom-information";
-}
-
-.Article-1 {
-    background-color: aliceblue;
-    grid-column: 1;
-    grid-row: 1 / 4;
-    object-fit: contain;
     display: flex;
     flex-direction: column;
 }
 
+.First-row {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.Second-row {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.Article-1 {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 10px;
+}
+
 .Article-1 img {
-    background-image: url("/Nivel 2/images/sakura.jpg");
+    background-image: url("../Nivel 2/images/sakura.jpg");
     width: 100%;
 }
 
@@ -146,59 +134,53 @@ section {
 
 .Article-2 {
     background-color: aliceblue;
-    grid-column: 2;
-    grid-row: 1 / 4;
-    object-fit: contain;
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .Article-2 img {
-    background-image: url("/Nivel 2/images/comida.jpg");
+    background-image: url("../Nivel 2/images/comida.jpg");
     width: 100%;
 }
 
 .Article-3 {
     background-color: aliceblue;
-    grid-column: 1;
-    grid-row: 4 / 7;
-    object-fit: contain;
     display: flex;
     flex-direction: column;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .Article-3 img {
-    background-image: url("/Nivel 2/images/fuji.jpg");
+    background-image: url("../Nivel 2/images/fuji.jpg");
     width: 100%;
 }
 
 .Article-4 {
     background-color: aliceblue;
-    grid-column: 2;
-    grid-row: 4 / 7;
-    object-fit: contain;
     display: flex;
     flex-direction: column;
+    width: 50%;
+    margin-bottom: 10px;
 }
 
 .Article-4 img {
-    background-image: url("/Nivel 2/images/noche.jpg");
-    width: 98%;
+    background-image: url("../Nivel 2/images/noche.jpg");
+    width: 100%;
 }
 
 #Bottom-information {
     background-color: #d9d9d9;
     text-align: center;
-    grid-column: 1 / span 2;
-    grid-row: 8;
-}
+    margin: 10px;
+} 
 
 .Right-menu {
     background-color: #d9d9d9;
     padding: 10px;
     margin-left: 10px;
-    grid-column: 9 / -1;
-    grid-row: 1 / -1;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -220,43 +202,20 @@ footer {
     justify-content: center;
 }
 
-@keyframes desplazamientoLado {
-    from {
-        transform: translateX(-100px);
-    }
-
-    to {
-        transform: translate(0);
-    }
-}
-
-@keyframes opacidad {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-
-}
-
 @media all and (max-width: 768px) {
     section {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .Content-section {
-        background-color: crimson;
-        padding: 10px;
-        column-gap: 10px;
+        margin: 0px;
     }
 
     .Right-menu {
         margin-top: 10px;
         margin-left: 0%;
-        grid-template-rows: repeat(8, 1fr);
     }
 
 }
@@ -289,14 +248,28 @@ footer {
         height: 2em;
     }
 
+    #RRSS {
+        margin-bottom: 20px;
+    }
+
     section {
-        display: flex;
         flex-direction: column;
     }
 
     .Content-section {
-        display: flex;
         flex-direction: column;
+    }
+
+    .First-row {
+        flex-direction: column;
+    }
+
+    .Second-row {
+        flex-direction: column;
+    }
+
+    .Article-1, .Article-2, .Article-3, .Article-4 {
+        width: 100%;
     }
 
     .Right-menu {
