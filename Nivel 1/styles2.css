@@ -1,0 +1,246 @@
+main {
+    background-color: white;
+    margin: 10px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: greenyellow;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Nav-var {
+    background-color: yellow;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#Logo {
+    background-color: mediumspringgreen;
+    align-items: flex-start;
+    width: 9em;
+    height: 7em;
+}
+
+#Contact {
+    background-color: mediumspringgreen;
+    align-items: flex-end;
+    width: 9em;
+    height: 7em;
+}
+
+#Menu-items {
+    background-color: mediumspringgreen;
+    width: 50em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Header-image {
+    background-color: orange;
+    padding: 20px;
+    height: 10em;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+#Web-title {
+    background-color: cornflowerblue;
+    width: 80%;
+    height: 2em;
+}
+
+section {
+    background-color: blueviolet;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Content-section {
+    background-color: blue;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.First-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.First-row article {
+    background-color: aquamarine;
+    width: 30em;
+    height: 15em;
+    margin: 10px;
+}
+
+.Second-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.Second-row article {
+    background-color: aqua;
+    width: 30em;
+    height: 15em;
+    margin: 10px;
+}
+
+#Bottom-information {
+    background-color: cornflowerblue;
+    height: 10em;
+    margin: 10px;
+}
+
+.Right-menu {
+    background-color: palevioletred;
+    padding: 10px;
+    margin-left: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#First-item-menu,
+#Second-item-menu {
+    background-color: burlywood;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: green;
+    padding: 10px;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer span {
+    background-color: cornflowerblue;
+    height: 5em;
+    width: 100%;
+}
+
+@media all and (max-width: 768px) {
+    section {
+        background-color: crimson;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Content-section {
+        background-color: yellowgreen;
+        padding: 0px;
+        width: 100%;
+        height: 80%;
+    }
+
+    .Right-menu {
+        padding: 5px;
+        margin: 15px;
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+    }
+
+    #First-item-menu,
+    #Second-item-menu {
+        background-color: burlywood;
+        width: 100%;
+        height: 3em;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+      
+    .Nav-var {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+    }
+
+    #Logo, #Contact, #Menu-items {
+        margin: 10px;
+        height: 3em;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .Header-image {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #Web-title {
+        width: 90%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .Content-section {
+        flex-direction: column;
+        padding: 3px;
+    }
+
+    .First-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .First-row article {
+        background-color: aquamarine;
+        width: 90%;
+        height: 5em;
+        margin: 10px;
+    }
+
+    .Second-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Second-row article {
+        background-color: aqua;
+        width: 90%;
+        height: 5em;
+        margin: 10px;
+    }
+
+    #Bottom-information {
+        background-color: cornflowerblue;
+        height: 5em;
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
