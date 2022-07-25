@@ -17,6 +17,11 @@ header {
     margin-bottom: 10px;
 }
 
+header img {
+    animation-name: desplazamientoLado;
+    animation-duration: 5s;
+}
+
 .Nav-var {
     color: gray;
     padding: 20px;
@@ -59,7 +64,9 @@ header h1 {
     margin-bottom: 10%;
     font-size: xx-large;
     font-weight: lighter;
-    opacity: 0.8;
+    animation-name: opacidad;
+    animation-delay: 0 3s;
+    animation-duration: 5s;
 }
 
 section {
@@ -200,6 +207,27 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+@keyframes desplazamientoLado {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes opacidad {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
 }
 
 @media all and (max-width: 768px) {
